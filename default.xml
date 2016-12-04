@@ -15,6 +15,14 @@
            sync-c="true"
            sync-j="4" />
 
+  <!-- OnePlus2 Repo's -->
+  <project name="ishantvivek/android_device_oneplus_oneplus2" path="device/oneplus/oneplus2" remote="github" revision="n" />
+  <project name="ishantvivek/android_device_oppo_common" path="device/oppo/common" remote="github" revision="n" />
+  <project name="ishantvivek/android_kernel_oneplus_msm8994" path="kernel/oneplus/msm8994" remote="github" revision="n" />
+  <project name="TheMuppets/proprietary_vendor_oneplus" path="vendor/oneplus" remote="github" revision="cm-14.1" />
+  <project name="TheMuppets/proprietary_vendor_qcom_binaries" path="vendor/qcom/binaries" remote="github" revision="cm-14.1" />
+  <!-- End -->
+
   <!-- Pure Repo's -->
   <project path="build" name="android_build" groups="pdk" remote="pure" revision="n" >
     <copyfile src="core/root.mk" dest="Makefile" />
