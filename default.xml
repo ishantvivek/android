@@ -32,6 +32,19 @@
            sync-j="4"
            sync-c="true"/>
 
+  <!-- JS01LTEDCM -->
+  <project path="device/samsung/js01ltedcm" name="SandPox/android_device_samsung_js01ltedcm" remote="github" revision="cm-14.1" />
+  <project path="kernel/samsung/js01ltedcm" name="SandPox/android_kernel_samsung_js01ltedcm" remote="github" revision="cm-14.1" />
+  <project path="vendor/samsung/js01ltedcm" name="SandPox/android_vendor_samsung_js01ltedcm" remote="github" revision="cm-14.1" />
+
+  <!-- SAMSUNG QCOM -->
+  <project path="device/samsung/qcom-common" name="LineageOS/android_device_samsung_qcom-common" remote="github" revision="cm-14.1" />
+  <project path="device/samsung/msm8974-common" name="LineageOS/android_device_samsung_msm8974-common" remote="github" revision="cm-14.1" />
+
+  <!-- DEPENDENCIES REPOS -->
+  <project path="external/stlport" name="LineageOS/android_external_stlport" groups="pdk" />
+  <project path="hardware/samsung" name="LineageOS/android_hardware_samsung" />
+
   <project name="abl/tianocore/edk2" path="bootable/bootloader/edk2"/>
   <project groups="pdk-cw-fs,pdk-fs" name="device/common"/>
   <project groups="pdk" name="device/generic/arm64"/>
