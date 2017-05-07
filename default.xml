@@ -33,17 +33,31 @@
            sync-c="true"/>
 
   <!-- JS01LTEDCM -->
-  <project path="device/samsung/js01ltedcm" name="SandPox/android_device_samsung_js01ltedcm" remote="github" revision="cm-14.1" />
-  <project path="kernel/samsung/js01ltedcm" name="SandPox/android_kernel_samsung_js01ltedcm" remote="github" revision="cm-14.1" />
+  <project path="device/samsung/js01ltedcm" name="ishantvivek/android_device_samsung_js01ltedcm" remote="github" revision="cm-14.1" />
+  <project path="kernel/samsung/js01ltedcm" name="ishantvivek/android_kernel_samsung_js01ltedcm" remote="github" revision="cm-14.1" />
   <project path="vendor/samsung/js01ltedcm" name="SandPox/android_vendor_samsung_js01ltedcm" remote="github" revision="cm-14.1" />
 
   <!-- SAMSUNG QCOM -->
-  <project path="device/samsung/qcom-common" name="LineageOS/android_device_samsung_qcom-common" remote="github" revision="cm-14.1" />
-  <project path="device/samsung/msm8974-common" name="LineageOS/android_device_samsung_msm8974-common" remote="github" revision="cm-14.1" />
+  <project path="device/samsung/qcom-common" name="ishantvivek/android_device_samsung_qcom-common" remote="github" revision="cm-14.1" />
+  <project path="device/samsung/msm8974-common" name="ishantvivek/android_device_samsung_msm8974-common" remote="github" revision="cm-14.1" />
 
   <!-- DEPENDENCIES REPOS -->
-  <project path="external/stlport" name="LineageOS/android_external_stlport" groups="pdk" />
-  <project path="hardware/samsung" name="LineageOS/android_hardware_samsung" />
+  <project path="external/stlport" name="LineageOS/android_external_stlport" remote="github" revision="cm-14.1" />
+  <project path="hardware/samsung" name="AOSPA/android_hardware_samsung" remote="github" revision="nougat-mr2" />
+
+  <!-- MODIFIED REPOS --> 
+  <project path="build" name="ishantvivek/android_build" remote="github" revision="7.1.2">
+    <copyfile src="core/root.mk" dest="Makefile" />
+  </project>
+  <project path="frameworks/native" name="ishantvivek/android_frameworks_native" remote="github" revision="7.1.2"/>
+  <project name="omnirom/android_hardware_qcom_wlan" revision="android-7.1" path="hardware/qcom/wlan" remote="github"/>
+  <project path="hardware/cyanogen" name="LineageOS/android_hardware_cyanogen" remote="github" revision="cm-14.1" />
+  <project path="hardware/qcom/audio" name="AOSPA/android_hardware_qcom_audio" remote="github" revision="nougat-mr1-8974" />
+  <project path="hardware/qcom/display" name="AOSPA/android_hardware_qcom_display" remote="github" revision="nougat-mr1-8974" />
+  <project path="hardware/qcom/media" name="AOSPA/android_hardware_qcom_media" remote="github" revision="nougat-mr1-8974" />
+  <project path="system/core" name="ishantvivek/android_system_core" remote="github" revision="7.1.2"/>
+  <project path="vendor/pa" name="ishantvivek/android_vendor_pa" remote="github" revision="nougat-mr2"/>
+  <project path="external/ant-wireless/antradio-library" name="LineageOS/android_external_ant-wireless_antradio-library" remote="github" revision="cm-14.1" />
 
   <project name="abl/tianocore/edk2" path="bootable/bootloader/edk2"/>
   <project groups="pdk-cw-fs,pdk-fs" name="device/common"/>
@@ -71,9 +85,9 @@
   <project groups="pdk" name="platform/art" path="art"/>
   <project groups="pdk" name="platform/bionic" path="bionic"/>
   <project groups="pdk" name="platform/bootable/recovery" path="bootable/recovery"/>
-  <project groups="pdk" name="platform/build" path="build">
+  <!--<project groups="pdk" name="platform/build" path="build">
     <copyfile dest="Makefile" src="core/root.mk"/>
-  </project>
+  </project> -->
   <project groups="pdk,tradefed" name="platform/build/blueprint" path="build/blueprint"/>
   <project groups="pdk,tradefed" name="platform/build/kati" path="build/kati"/>
   <project groups="pdk,tradefed" name="platform/build/soong" path="build/soong">
@@ -351,7 +365,7 @@
   <project groups="pdk-cw-fs,pdk-fs" name="platform/frameworks/minikin" path="frameworks/minikin"/>
   <project groups="pdk-cw-fs,pdk-fs" name="platform/frameworks/ml" path="frameworks/ml"/>
   <project groups="pdk-cw-fs,pdk-fs" name="platform/frameworks/multidex" path="frameworks/multidex"/>
-  <project groups="pdk" name="platform/frameworks/native" path="frameworks/native"/>
+  <!--<project groups="pdk" name="platform/frameworks/native" path="frameworks/native"/>-->
   <project groups="pdk-fs" name="platform/frameworks/opt/bitmap" path="frameworks/opt/bitmap"/>
   <project groups="pdk-cw-fs,pdk-fs" name="platform/frameworks/opt/bluetooth" path="frameworks/opt/bluetooth"/>
   <project groups="pdk-cw-fs,pdk-fs" name="platform/frameworks/opt/calendar" path="frameworks/opt/calendar"/>
@@ -382,14 +396,14 @@
   <project groups="nvensense,pdk" name="platform/hardware/invensense" path="hardware/invensense"/>
   <project groups="pdk" name="platform/hardware/libhardware" path="hardware/libhardware"/>
   <project groups="pdk" name="platform/hardware/libhardware_legacy" path="hardware/libhardware_legacy"/>
-  <project groups="qcom,default" name="platform/hardware/qcom/audio" path="hardware/qcom/audio"/>
+  <!--<project groups="qcom,default" name="platform/hardware/qcom/audio" path="hardware/qcom/audio"/>-->
   <project name="platform/hardware/qcom/bootctrl" path="hardware/qcom/bootctrl"/>
   <project groups="qcom" name="platform/hardware/qcom/bt" path="hardware/qcom/bt"/>
   <project groups="qcom,default" name="platform/hardware/qcom/camera" path="hardware/qcom/camera"/>
-  <project groups="qcom,default" name="platform/hardware/qcom/display" path="hardware/qcom/display"/>
+  <!--<project groups="qcom,default" name="platform/hardware/qcom/display" path="hardware/qcom/display"/>-->
   <project groups="qcom,qcom_gps" name="platform/hardware/qcom/gps" path="hardware/qcom/gps"/>
-  <project groups="qcom,default" name="platform/hardware/qcom/media" path="hardware/qcom/media"/>
-  <project groups="qcom_wlan" name="platform/hardware/qcom/wlan" path="hardware/qcom/wlan"/>
+  <!--<project groups="qcom,default" name="platform/hardware/qcom/media" path="hardware/qcom/media"/>-->
+  <!--<project groups="qcom_wlan" name="platform/hardware/qcom/wlan" path="hardware/qcom/wlan"/>-->
   <project groups="pdk" name="platform/hardware/ril" path="hardware/ril"/>
   <project name="platform/hardware/stm" path="hardware/stm"/>
   <project groups="pdk" name="platform/libcore" path="libcore"/>
@@ -511,7 +525,7 @@
   <project name="platform/system/connectivity/apmanager" path="system/connectivity/apmanager"/>
   <project name="platform/system/connectivity/dhcp_client" path="system/connectivity/dhcp_client"/>
   <project name="platform/system/connectivity/shill" path="system/connectivity/shill"/>
-  <project groups="pdk" name="platform/system/core" path="system/core"/>
+  <!--<project groups="pdk" name="platform/system/core" path="system/core"/>-->
   <project groups="pdk" name="platform/system/extras" path="system/extras"/>
   <project name="platform/system/firewalld" path="system/firewalld"/>
   <project groups="pdk" name="platform/system/gatekeeper" path="system/gatekeeper"/>

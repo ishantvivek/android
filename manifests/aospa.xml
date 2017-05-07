@@ -4,10 +4,6 @@
   <project path="manifest" name="AOSPA/manifest" remote="aospa" groups="aospa" />
 
   <!-- Build repositories -->
-  <remove-project name="platform/build" />
-  <project path="build" name="AOSPA/android_build" remote="aospa" groups="aospa" >
-    <copyfile src="core/root.mk" dest="Makefile" />
-  </project>
   <remove-project name="platform/build/kati" />
   <project path="build/kati" name="AOSPA/android_build_kati" remote="aospa" groups="aospa" />
 
@@ -48,8 +44,6 @@
   <project path="frameworks/av" name="AOSPA/android_frameworks_av" remote="aospa" groups="aospa" />
   <remove-project name="platform/frameworks/base" />
   <project path="frameworks/base" name="AOSPA/android_frameworks_base" remote="aospa" groups="aospa" />
-  <remove-project name="platform/frameworks/native" />
-  <project path="frameworks/native" name="AOSPA/android_frameworks_native" remote="aospa" groups="aospa" />
   <remove-project name="platform/frameworks/opt/net/wifi" />
   <project path="frameworks/opt/net/wifi" name="AOSPA/android_frameworks_opt_net_wifi" remote="aospa" groups="aospa" />
   <remove-project name="platform/frameworks/opt/telephony" />
@@ -112,8 +106,6 @@
   <!-- System -->
   <remove-project name="platform/system/bt" />
   <project path="system/bt" name="AOSPA/android_system_bt" remote="aospa" groups="aospa" />
-  <remove-project name="platform/system/core" />
-  <project path="system/core" name="AOSPA/android_system_core" remote="aospa" groups="aospa" />
   <remove-project name="platform/system/extras" />
   <project path="system/extras" name="AOSPA/android_system_extras" remote="aospa" groups="aospa" />
   <remove-project name="platform/system/media" />
@@ -123,10 +115,6 @@
   <remove-project name="platform/system/vold" />
   <project path="system/vold" name="AOSPA/android_system_vold" remote="aospa" groups="aospa" />
 
-  <!-- Vendor -->
-  <project path="vendor/pa" name="AOSPA/android_vendor_pa" remote="aospa" groups="aospa" >
-    <copyfile src="build.sh" dest="rom-build.sh" />
-  </project>
   <remove-project name="platform/vendor/qcom-opensource/bluetooth" />
   <project path="vendor/qcom/opensource/bluetooth" name="AOSPA/android_vendor_qcom_opensource_bluetooth" remote="aospa" groups="aospa" />
 
@@ -180,11 +168,8 @@
   <remove-project name="platform/vendor/qcom/thulium"/>
   <remove-project name="platform/vendor/qcom/titanium_32"/>
   <remove-project name="platform/vendor/qcom/titanium_64"/>
-  <remove-project name="platform/hardware/qcom/audio"/>
   <remove-project name="platform/hardware/qcom/camera"/>
-  <remove-project name="platform/hardware/qcom/display"/>
   <remove-project name="platform/hardware/qcom/gps"/>
-  <remove-project name="platform/hardware/qcom/media"/>
   <remove-project name="platform/vendor/qcom-opensource/data-ipa-cfg-mgr"/>
   <remove-project name="device/sample"/>
   <remove-project name="kernel/msm-4.4"/>
