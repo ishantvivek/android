@@ -217,5 +217,8 @@
   <remove-project name="device/generic/goldfish-opengl"/>
   <remove-project name="platform/packages/apps/Launcher2"/>
 
+  <!-- Tomato specific additions -->
+  <include name="pa_tomato.xml"/>
+
 </manifest>
 

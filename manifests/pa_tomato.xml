@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+<!-- Removals -->
+<remove-project name="AOSPA/android_build"/>
+<remove-project name="AOSPA/android_frameworks_native"/>
+<remove-project name="AOSPA/android_packages_apps_SnapdragonCamera"/>
+<remove-project name="AOSPA/android_system_core"/>
+<remove-project name="AOSPA/android_vendor_pa"/>
+<remove-project name="platform/hardware/qcom/wlan"/>
+<remove-project name="platform/packages/apps/FMRadio"/>
+<remove-project name="platform/vendor/qcom-opensource/fm"/>
+
+<!-- Additions -->
+<project path="build" name="karthick111/build" remote="github" revision="nougat-mr2"/>
+<project path="frameworks/native" name="karthick111/frameworks_native" remote="github" revision="nougat-mr2"/>
+<project name="omnirom/android_packages_apps_FMRadio" revision="android-7.1" path="packages/apps/FMRadio" remote="github"/>
+<project name="omnirom/android_packages_apps_SnapdragonCamera" revision="android-7.1" path="packages/apps/SnapdragonCamera" remote="github"/>
+<project path="system/core" name="karthick111/system_core" remote="github" revision="nougat-mr2"/>
+<project path="vendor/pa" name="karthick111/vendor_pa" remote="github" revision="nougat"/>
+<project name="omnirom/android_hardware_qcom_wlan" revision="android-7.1" path="hardware/qcom/wlan" remote="github"/>
+
+<!-- Hyperized stuffs -->
+<project name="karthick111/hyper_8916" revision="cm-14.1" path="kernel/cyanogen/msm8916" remote="github"/>
+<project name="karthick111/hyper_A6020" revision="cm-14.1" path="kernel/lenovo/msm8916" remote="github"/>
+
+<!-- misc packages -->
+<project name="lineageos/android_external_bson" revision="cm-14.1" path="external/bson" remote="github"/>
+<project name="lineageos/android_external_stlport" revision="cm-14.1" path="external/stlport" remote="github"/>
+<project name="lineageos/android_external_sony_boringssl-compat" revision="cm-14.1" path="external/sony/boringssl-compat" remote="github"/>
+<project name="lineageos/android_hardware_cyanogen" revision="cm-14.1" path="hardware/cyanogen" remote="github" />
+
+<!-- caf-8916 hals -->
+<project name="omnirom/android_hardware_qcom_media-caf-msm8916" revision="android-7.1" path="hardware/qcom/media-caf-msm8916" remote="github"/>
+<project name="omnirom/android_hardware_qcom_display-caf-msm8916" revision="android-7.1" path="hardware/qcom/display-caf-msm8916" remote="github"/>
+<project name="omnirom/android_hardware_qcom_audio-caf-msm8916" revision="android-7.1" path="hardware/qcom/audio-caf-msm8916" remote="github"/>
+
+  <!-- caf-8937 hals -->
+<project name="omnirom/android_hardware_qcom_media-caf-msm8937" revision="android-7.1" path="hardware/qcom/media-caf-msm8937" remote="github"/>
+<project name="omnirom/android_hardware_qcom_display-caf-msm8937" revision="android-7.1" path="hardware/qcom/display-caf-msm8937" remote="github"/>
+<project name="omnirom/android_hardware_qcom_audio-caf-msm8937" revision="android-7.1" path="hardware/qcom/audio-caf-msm8937" remote="github"/>
+  
+<!-- qcom -->	
+<project name="omnirom/android_hardware_qcom_fm" revision="android-7.1" path="hardware/qcom/fm" remote="github"/>
+<project name="omnirom/android_hardware_qcom_keymaster" revision="android-7.1" path="hardware/qcom/keymaster" remote="github"/>
+</manifest>
